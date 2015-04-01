@@ -8,7 +8,6 @@ describe('Strategy', function() {
   var strategy = new Strategy(
     secret,
     function(token, done) {
-      console.log("using token: " + token);
       if (token.sub % 2) {
         return done(null, { id: token.sub }, token);
       }
