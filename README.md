@@ -1,10 +1,12 @@
 # passport-http-jwt-bearer
 
-[![Build Status](https://travis-ci.org/Pheromone/passport-http-jwt-bearer.svg?branch=master)](https://travis-ci.org/Pheromone/passport-http-jwt-bearer)
+**This package is currently unmaintained and looking for a new maintainer. Contact us if you are interested taking ownership of this package. **
+
+[![Build Status](https://travis-ci.org/FloeDesignTechnologies/passport-http-jwt-bearer.svg?branch=master)](https://travis-ci.org/FloeDesignTechnologies/passport-http-jwt-bearer) [![Dependency Status](https://david-dm.org/FloeDesignTechnologies/passport-http-jwt-bearer.svg)](https://david-dm.org/FloeDesignTechnologies/passport-http-jwt-bearer) [![devDependency Status](https://david-dm.org/FloeDesignTechnologies/passport-http-jwt-bearer/dev-status.svg)](https://david-dm.org/FloeDesignTechnologies/passport-http-jwt-bearer#info=devDependencies)
 
 JSON Web Token (JWT) Bearer Token for OAuth 2.0 user authentication strategy
 for Passport, using [HTTP Bearer authentication](https://www.npmjs.org/package/passport-http-bearer)
-and [jsonwebtoken](https://github.com/auth0/node-jsonwebtoken).
+and [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken).
 
 This module lets you authenticate requests containing a JSON Web Token (JWT)
 encoded and signed OAuth2 access token, in your Node.js applications.
@@ -12,7 +14,7 @@ encoded and signed OAuth2 access token, in your Node.js applications.
 Bearer tokens are typically used protect API endpoints, and are often issued
 using OAuth 2.0.
 
-JSON Web Toke (JWT) is a compact, URL-safe means of representing claims to be
+JSON Web Token (JWT) is a compact, URL-safe means of representing claims to be
 transferred between two parties.  The claims in a JWT are encoded as a
 JavaScript Object Notation (JSON) object that is used as the payload of a JSON
 Web Signature (JWS) structure or as the plaintext of a JSON Web Encryption
@@ -44,7 +46,7 @@ user.  Optional `info` can be passed, typically including associated scope,
 which will be set by Passport at `req.authInfo` to be used by later middleware
 for authorization and access control.
 
-    var JwtBearerStrategy require('passport-http-bearer')
+    var JwtBearerStrategy require('passport-http-jwt-bearer')
 
      passport.use(new JwtBearerStrategy(
        secretOrPublicKey,
